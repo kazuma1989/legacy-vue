@@ -1,0 +1,12 @@
+{
+  "items": [
+    {
+      "name": "aaa",
+      "amount": 100
+    },
+    {
+      "name": "bbb",
+      "amount": 30
+    }
+  ]
+}

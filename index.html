@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>LEGACY APP</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./index.css" />
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default%2Cfetch%2CPromise"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="./index.js"></script>
+  </head>
+
+  <body>
+    <div id="app">
+      <h1>LEGACY APP</h1>
+
+      <p v-text="message"></p>
+      <p>
+        <button @click="search">SEARCH</button>
+      </p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>NAME</th>
+            <th>AMOUNT</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr v-for="item in items">
+            <td v-text="item.name"></td>
+            <td v-text="item.amount"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>
