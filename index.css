@@ -10,5 +10,23 @@ html {
 body {
   margin: 0 auto;
   padding: 20px 40px;
-  width: 40em;
+  width: 800px;
+}
+
+.area-form {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.area-search {
+  padding: 0 10px 10px;
+  background-color: gainsboro;
+  flex: 1 0;
+  margin-right: 10px;
+}
+
+.area-select {
+  padding: 0 10px 10px;
+  background-color: gainsboro;
+  flex: 1 0;
 }

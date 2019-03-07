@@ -1,0 +1,16 @@
+{
+  "optionsFirst": [
+    {
+      "value": "A",
+      "text": "Item A"
+    },
+    {
+      "value": "B",
+      "text": "Item B"
+    },
+    {
+      "value": "C",
+      "text": "Item C"
+    }
+  ]
+}
