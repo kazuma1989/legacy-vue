@@ -3,7 +3,9 @@ const app = new Vue({
     message: "Loading...",
     items: [],
     selectedFirst: "",
-    optionsFirst: []
+    optionsFirst: [],
+    selectedSecond: "",
+    optionsSecond: []
   },
 
   methods: {
@@ -21,6 +23,27 @@ const app = new Vue({
           })
           .then(function(data) {
             app.items = data.items;
+          });
+      });
+    }
+  },
+
+  watch: {
+    selectedFirst: function(newValue, oldValue) {
+      app.selectedSecond = "";
+      app.optionsSecond = [];
+
+      const fakeDelay = new Promise(function(resolve) {
+        setTimeout(resolve, 1000);
+      });
+
+      fakeDelay.then(function() {
+        fetch("/api/optionsSecond.json")
+          .then(function(resp) {
+            return resp.json();
+          })
+          .then(function(data) {
+            app.optionsSecond = data.optionsSecond[newValue];
           });
       });
     }

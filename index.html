@@ -47,6 +47,14 @@
                 v-text="o1.text"
               ></option>
             </select>
+
+            <select v-model="selectedSecond">
+              <option
+                v-for="o2 in optionsSecond"
+                :value="o2.value"
+                v-text="o2.text"
+              ></option>
+            </select>
           </p>
         </div>
       </div>

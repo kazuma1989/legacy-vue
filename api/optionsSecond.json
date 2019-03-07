@@ -1,0 +1,34 @@
+{
+  "optionsSecond": {
+    "A": [
+      {
+        "value": "A1",
+        "text": "Item A1"
+      },
+      {
+        "value": "A2",
+        "text": "Item A2"
+      }
+    ],
+    "B": [
+      {
+        "value": "B1",
+        "text": "Item B1"
+      },
+      {
+        "value": "B2",
+        "text": "Item B2"
+      },
+      {
+        "value": "B3",
+        "text": "Item B3"
+      }
+    ],
+    "C": [
+      {
+        "value": "C1",
+        "text": "Item C1"
+      }
+    ]
+  }
+}
